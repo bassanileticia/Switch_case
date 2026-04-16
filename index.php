@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelNow - Checkout</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -40,9 +41,6 @@
     <button type="submit">Calcular viagem</button>
 
 </form>
-
-</body>
-</html>
    
 </body>
 </html>
