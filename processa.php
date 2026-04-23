@@ -1,4 +1,13 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="processa.css">
+</head>
+<body>
+    <?php
 
 $nome = $_POST['nome'];
 $valor = $_POST['valor'];
@@ -113,23 +122,21 @@ if ($valor > 500) {
 $total = $valor + $taxa;
 
 
-echo "<hr>";
-
 echo "<h3>Detalhamento do cálculo</h3>";
 
 foreach ($detalhes as $d) {
     echo "• $d<br>";
 }
 
-echo "<hr>";
-
 echo "<p><strong>Prazo estimado:</strong> $prazo</p>";
 echo "<p><strong>Taxa de viagem:</strong> R$ " . number_format($taxa, 2, ',', '.') . "</p>";
 
 echo "<h2>Total final: R$ " . number_format($total, 2, ',', '.') . "</h2>";
 
-echo "<hr>";
-
 echo "<p><strong>Status:</strong> Viagem confirmada ✔</p>";
 
 ?>
+</body>
+</html>
+
+
