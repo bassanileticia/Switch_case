@@ -1,0 +1,89 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e5e7eb;
+    color: #111827;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #1e40af;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+form {
+    width: 420px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    overflow: hidden; /* CORRIGE BUG DOS CANTOS */
+}
+
+input, select {
+    width: 100%;
+    padding: 11px;
+    margin: 8px 0 16px 0;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    transition: 0.2s;
+    background: #f9fafb;
+}
+
+
+input:focus, select:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1e3a8a;
+}
+
+
+.resultado {
+    width: 520px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.linha {
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.total {
+    text-align: center;
+    font-size: 22px;
+    color: #16a34a;
+    font-weight: bold;
+    margin-top: 15px;
+}
