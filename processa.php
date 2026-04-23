@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recibo da reversa</title>
     <link rel="stylesheet" href="processa.css">
 </head>
 <body>
@@ -20,8 +20,7 @@ $taxa = 0;
 $detalhes = [];
 $prazo = "";
 
-echo "<h1>TravelNow</h1>";
-echo "<h2>Recibo da Reserva</h2>";
+echo "<h1>TravelNow - Recibo da Reserva</h1>";
 
 echo "<p><strong>Cliente:</strong> $nome</p>";
 echo "<p><strong>Valor do pacote:</strong> R$ " . number_format($valor, 2, ',', '.') . "</p>";
@@ -122,11 +121,15 @@ if ($valor > 500) {
 $total = $valor + $taxa;
 
 
+echo "<div class='bloco'>";
+
 echo "<h3>Detalhamento do cálculo</h3>";
 
 foreach ($detalhes as $d) {
-    echo "• $d<br>";
+    echo "<p>• $d</p>";
 }
+
+echo "</div>";
 
 echo "<p><strong>Prazo estimado:</strong> $prazo</p>";
 echo "<p><strong>Taxa de viagem:</strong> R$ " . number_format($taxa, 2, ',', '.') . "</p>";
@@ -134,6 +137,12 @@ echo "<p><strong>Taxa de viagem:</strong> R$ " . number_format($taxa, 2, ',', '.
 echo "<h2>Total final: R$ " . number_format($total, 2, ',', '.') . "</h2>";
 
 echo "<p><strong>Status:</strong> Viagem confirmada ✔</p>";
+
+echo "<div style='text-align:center; margin-top:20px;'>
+        <a href='index.php'>
+            <button>⬅ fazer nova reserva</button>
+        </a>
+      </div>";
 
 ?>
 </body>
